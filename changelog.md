@@ -1,5 +1,27 @@
 # Changelog
 
+## v0.2.12
+
+### Added
+
+- Added a Comments filter pill to My work for filtering by total comment count. Pick an operator (greater than, at least, less than, at most, exactly, or between) and enter a number.
+- Added a copy-to-clipboard button to the pasted text preview dialog, and made the text selectable so content can be copied via standard text selection.
+- Added a hidden minigame to the home screen — find the secret platform to start an infinite jumping adventure with power-ups, hazards, and a persistent high score.
+- Added a native system tray menu with live session status, PR checks and review info, badge notifications for sessions needing attention, quick actions to create sessions and chats, and a Settings toggle to show or hide the tray icon.
+- Added a terminal font picker in Settings that lists your installed fonts, previews each in its own typeface, and applies your selection to the embedded terminal.
+- Right-clicking a pull request or issue reference in a conversation now shows a context menu with a "Copy link" option to quickly copy the GitHub URL.
+
+### Changed
+
+- Error screens now show a plain text recovery UI instead of an illustration.
+- Project color picker in the repository context menu now displays as a compact 4x2 grid of color tiles, making it faster to scan and select. Orange has been added as a new color option.
+
+### Fixed
+
+- Avatar fallback initials no longer overflow for multi-word names — they are now capped at two letters.
+- Fixed a spurious "Error" badge appearing on inline review comment threads after the agent successfully replied to a review comment.
+- PR and issue badges now correctly respect the 'Use a pointer cursor over buttons and links' accessibility setting instead of always showing a pointer cursor.
+
 ## v0.2.11
 
 ### Added
