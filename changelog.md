@@ -1,5 +1,30 @@
 # Changelog
 
+## v0.2.14
+
+### Added
+
+- Added a copy button to the markdown editor toolbar so you can copy the full document contents to your clipboard without manually selecting all the text.
+- The app now prompts you to review and trust a repository's `.github/github-app.yml` configuration file before applying any of its customizations (scripts, system-prompt injections, or automation settings). The conversation input is blocked until you approve or dismiss, and you can review or revoke trust at any time from the project settings.
+- The rubber-duck agent is now enabled by default for all users, providing constructive feedback on code and designs via the /rubber-duck slash command.
+
+### Changed
+
+- Exporting a reply as a secret gist no longer shows a success toast — the browser opens the gist automatically and the URL is copied to your clipboard.
+- Improved the MCP Servers settings page with a unified Add server button, a searchable popular servers grid with text highlighting, and a better empty state with actionable guidance.
+- Reordered settings for easier access — Scripts now appears higher in Project Settings, and Default model now appears higher in General Settings.
+- The Status filter in the filter bar now supports multi-select, letting you view open and closed items at the same time.
+
+### Fixed
+
+- Expanded sidebar project groups with no sessions now show a 'No sessions yet' label instead of appearing blank.
+- Fixed spurious "git-lfs is not installed" errors when creating worktree sessions for repositories that use Git LFS, even with git-lfs installed and working in your terminal.
+- Fixed the keyboard shortcuts dialog so the "Current view" tab (previously "Contextual") only shows shortcuts specific to the active view, hides the tab selector entirely when no view-specific shortcuts exist, and scrolls to the top when switching tabs
+- Loading spinners now rotate around their own center instead of an offset point.
+- On macOS, the bash tool in agent sessions now correctly inherits your login shell's PATH, so tools installed via Homebrew, fnm, nvm, and similar managers no longer report "command not found".
+- Slash commands (such as /chronicle) now show their short command text in the conversation timeline instead of the full verbose system prompt.
+- The Changes toolbar no longer shows a branch sync button for folder workspaces that have no local git context.
+
 ## v0.2.13
 
 ### Added
