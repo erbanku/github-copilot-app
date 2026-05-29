@@ -1,5 +1,23 @@
 # Changelog
 
+## v0.2.16
+
+### Added
+
+- Sessions created by another session are now shown nested under their parent session in the sidebar.
+
+### Changed
+
+- Automation runs no longer flicker as placeholder sessions in the sidebar. Starting a run now immediately shows a 'Preparing automation' progress state. The 'Open session' button is promoted to a primary action in the run view. The Automations sidebar item now shows green/red counts of succeeded and failed runs instead of a single status dot.
+- The pull request detail view in My Work now displays branch labels with an arrow instead of verbose merge text, and the split-pane view now shows the PR title, status badge, and labels in a compact inline row.
+
+### Fixed
+
+- "Always allow for this project" permission approvals now persist correctly across sessions when using git worktrees — the approval dialog no longer re-prompts on every new worktree-backed session.
+- Fixed EGL_BAD_PARAMETER crashes on Wayland systems (Arch, Fedora 42) when launching the Linux AppImage
+- Fixed the "Last commit" diff scope incorrectly showing an empty "No changes to compare" state and a nonsense branch label when the tip commit had changes.
+- The context window size shown in the workspace header now displays the correct default tier value instead of the maximum long-context window. AI credit usage is also preserved when resuming a previous session.
+
 ## v0.2.15
 
 ### Changed
