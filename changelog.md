@@ -1,5 +1,45 @@
 # Changelog
 
+## v0.2.27
+
+### Fixed
+
+- Fixed task-list checkboxes overflowing outside the card boundary in the pull request drawer, and enabled interactive checkbox toggling in that view.
+- The "Read documentation" link on the home screen now opens the GitHub Copilot app-specific getting started guide instead of the generic Copilot documentation page.
+
+## v0.2.26
+
+### Added
+
+- Added support for toggling task list checkboxes (`- [ ]` / `- [x]`) directly in the embedded pull request and issue descriptions. Changes are saved back to GitHub.
+- F6 and Shift+F6 now cycle keyboard focus through major regions of the app, making it faster for keyboard and screen-reader users to navigate between the sidebar, conversation area, composer, and other landmarks.
+
+### Changed
+
+- Reduced worktree session startup time by roughly half, from ~6 seconds to ~3.5 seconds.
+- The token usage section in the workspace branch popover now shows cached tokens and reasoning tokens in addition to input and output token counts.
+
+### Fixed
+
+- Conversation no longer replays a long catch-up scroll when returning to a session after display sleep, App Nap, or extended window occlusion.
+- Fixed @mentions, EMU usernames, and commit SHA links not rendering correctly in pull request descriptions containing raw HTML (e.g. <details> blocks).
+- Fixed an issue where delegated sessions using `notify_on_idle: "always"` would send a flood of repeated desktop notifications with no new content.
+- Fixed an issue where deleting a worktree session could force-delete the local branch even when it contained local commits that were never pushed, causing data loss.
+- Fixed an issue where the model picker would revert to the session's previous model when switching back to an existing session, discarding any model selection the user made.
+- Fixed inline images in private-repository issues, pull requests, and comments failing to load with an HTTP 404 error once the page had been open for a few minutes. These images now refresh their short-lived signed URLs on demand.
+- Fixed several keyboard navigation issues in the sidebar chat list: Tab now correctly exits the list instead of getting trapped, activating "Show more" moves focus to the first newly revealed item, and pressing Space no longer accidentally activates a chat row while typing a search.
+- Fixed the end-of-response actions toolbar (copy, share, bookmark, fork) appearing on an assistant message while the response was still in progress. The toolbar now stays hidden across the whole in-flight response and only surfaces once the turn genuinely ends.
+- Removed spurious "No comments yet." placeholder from the pull request conversation area and review draft panel when there are no comments.
+- Settings dropdowns now immediately reflect the chosen archive and delete windows after accepting the auto-cleanup prompt, instead of showing "Disabled" until the next app restart.
+- Show a loading spinner in the diff view when file changes are still loading, preventing a blank white area with no visual feedback.
+- The branch sync indicator now correctly shows when a workspace branch is both diverged from its upstream and behind the PR base, instead of silently dropping the behind-base count and showing a misleading status.
+
+## v0.2.25
+
+### Fixed
+
+- The app now restores your last viewed page after a reload (such as waking your Mac from sleep), instead of returning you to the home screen.
+
 ## v0.2.24
 
 ### Fixed
