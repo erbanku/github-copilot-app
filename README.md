@@ -4,7 +4,7 @@ The GitHub Copilot app is a desktop application for agent-driven development tha
 
 <p align="center">
   <a href="https://github.com/github/app#install">
-    <img alt="Download GitHub Copilot app" src="https://img.shields.io/badge/Download-GitHub%20Copilot%20app-0969DA?style=for-the-badge&logo=github&logoColor=white">
+    <img alt="Download the GitHub Copilot app" src="https://img.shields.io/badge/Download-GitHub%20Copilot%20app-0969DA?style=for-the-badge&logo=github&logoColor=white">
   </a>
 </p>
 
@@ -14,9 +14,7 @@ The GitHub Copilot app is a desktop application for agent-driven development tha
 
 https://github.com/user-attachments/assets/50f215b5-f708-444e-83f7-3303bfa97963
 
-## Overview
-
-## Introduction and overview
+## The GitHub Copilot app
 
 The GitHub Copilot app is an agent-native desktop experience for managing software work from idea to pull request. It gives you a single control center for finding the right work to pick up, starting and steering agents, reviewing progress, and landing changes across repositories without constantly switching between terminals, editors, browser tabs, and GitHub pages.
 
