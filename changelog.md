@@ -1,5 +1,34 @@
 # Changelog
 
+## v1.0.7
+
+### Highlights
+
+- Added a "Quick chat" option to the home screen project picker, letting you start a chat session directly without selecting a repository.
+- Automation runs now show token, context, and AI-credit usage in the run details popover, matching what chat sessions already display.
+- The model picker now widens to fit long custom model names, and custom model providers show their own brand icons in the picker.
+- macOS traffic light buttons are now native controls, restoring accessibility support and the green button long-press window management menu.
+- Fixed agent-merge incorrectly declining to merge pull requests that the user has permission to merge.
+
+### Added
+
+- Added a "Quick chat" option to the home screen project picker, letting you start a chat session directly without selecting a repository.
+- Automation runs now show token, context, and AI-credit usage in the run details popover, matching what chat sessions already display. Reopening a past run shows the spend from that run.
+
+### Changed
+
+- macOS traffic light buttons are now native controls, restoring accessibility support and the green button long-press window management menu.
+- The model picker now widens to fit long custom model names, and custom model providers show their own brand icons (Ollama, Azure, Microsoft Foundry, Foundry Local) in the picker and the "Model changed" message. The "Custom" badge on custom models now flows inline with the model name.
+- Updated the top-level fuzzy-matchable slash commands for the Impeccable design skill. The promoted shortcuts are now `/impeccable audit`, `/impeccable critique`, `/impeccable live`, `/impeccable polish`, and `/impeccable distill`.
+
+### Fixed
+
+- Closed issues now show the correct status indicator everywhere, including the inbox: purple for completed, and grey with a circle-slash icon for issues closed as not planned or duplicate (instead of red or a generic closed badge).
+- Fixed a crash in the tray menu that could occur on startup when store data arrived while the menu was being built.
+- Fixed agent-merge incorrectly declining to merge pull requests that the user has permission to merge.
+- Fixed clipped border corners on settings textareas (e.g. the Instructions field) caused by the horizontal scrollbar gutter.
+- Sidebar tooltips now dismiss immediately when the sidebar is collapsed, instead of remaining visible and floating disconnected from their triggers.
+
 ## v1.0.6
 
 ### Highlights
